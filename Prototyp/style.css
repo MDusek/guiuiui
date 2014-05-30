@@ -1,0 +1,31 @@
+body{
+width: 2048px;
+height: 1536px;
+
+}
+
+
+.button {
+	display:block;
+	padding:2px;
+	width: 190px;
+	height: 190px;
+	cursor:pointer;
+	border-radius: 13px;
+	margin: 8px;	
+
+}
+.button.button-return {
+	background:url('Links/button_return.svg');
+	background-size: auto 100%;
+	background-color: #B2B2B2;
+	box-shadow: 0px 5px rgba(210,210,210) ;
+}
+
+.button.button-stop {
+	background:url('Links/button_stop.svg');
+	background-size: auto 100%;
+	background-color: #B2B2B2;
+	box-shadow: 0px 5px rgba(210,210,210) ;
+}
+
