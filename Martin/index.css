@@ -1,0 +1,49 @@
+body {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	font-size: 16px;
+	line-height: 1.3;
+	background-color: #F8F8F8;
+}
+
+header {
+	background-color: #003399;
+	padding: 1%;
+	margin: 0;
+	text-decoration: none;
+	color:white;
+	text-align: right;
+	font-style: thin;
+}
+
+.sidebar {
+	position: absolute;
+	padding:2%;
+	color: black;
+	float:left;
+	background-color:#CCD6EB;
+	width:25%;
+	height:100%;
+}
+
+.mitte {
+	position: absolute;
+	float:left;
+	padding:5%;
+	margin-left: 25%;
+}
+
+.sidebar_right {
+	position: absolute;
+	padding:2%;
+	color: black;
+	float:right;
+	background-color:#DDDDDD;
+	width:10%;
+	height:100%;
+}
+
+#knopf .hilfe{
+	color:red;
+}
