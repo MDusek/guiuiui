@@ -1,0 +1,18 @@
+body {
+ 
+  font-family: Areal;
+  font-style:normal;
+  font-weight:lighter;  
+  background-image:url(Titelbild.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+h1 {
+  color:rgba(255,255,255,10);  
+}
+
+
+img {
+	
+	}
