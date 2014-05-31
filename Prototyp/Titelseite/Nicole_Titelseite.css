@@ -1,17 +1,17 @@
 body {
   	font-family: Areal;
-  	font-style:normal;
-  	font-weight:lighter;  
+  	font-size:medium;  
   	background-image:url(Titelbild.jpg);
   	background-size:cover;
 	background-repeat:no-repeat;
 }
-
 div{	
 	}
 	
 h1 {
-	color:rgba(255,255,255,10);  
+	color:rgba(255,255,255,10); 
+	font-size:large; 
+	margin-top:0;	
 }
 
 h1 span {
@@ -30,7 +30,19 @@ img#willkommen {
 	position:absolute;
 	top:0;
 	left:0;
+	width:400px;
 }
 
+h2{
+	margin-top:600px;
+	font-family: Areal;
+	font-size:large;
+  	font-weight:lighter;
+	color:rgba(255,255,255,10);
+}
 
+h2 span {
+	margin-left: 40px;
+	margin-right: 40px;
+}
 
