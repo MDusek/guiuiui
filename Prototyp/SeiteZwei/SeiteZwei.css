@@ -1,0 +1,59 @@
+body {
+  	font-family: Areal;
+  	font-size:medium;  
+  	background-image:url(Titelbild.jpg);
+  	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+img#logo {
+	position:absolute;
+	top:0;
+	right:0;
+	width:200px;
+}
+
+img#willkommen {
+	position:absolute;
+	top:0;
+	left:0;
+	width:400px;
+}
+
+h1 {
+	color: #FFF;
+	font-size:large; 
+	line-height:0.5;
+	margin-top:0;	
+	}
+
+h1 span {
+	margin-left: 40px;
+	margin-right: 40px;
+	}
+
+h2 {
+	color:#F00;
+	font-size: 16px;
+	}	
+	
+.taste {
+  display: center;
+  position: absolute;
+  width: 50%;
+  float:left;
+  width: 18em;
+  height: 5em;
+  margin: 0.5em;
+  padding: 0.2em 0.5em;
+  color:#333;
+  background-color:#575757;
+  /*border: 2px solid #696;*/
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align:center;
+  
+}
+

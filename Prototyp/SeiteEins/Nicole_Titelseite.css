@@ -6,6 +6,11 @@ body {
 	background-repeat:no-repeat;
 }
 
+h1{ color:#FFF;
+	font-size:small;
+}
+
+
 h2 {
 	color:rgba(255,255,255,10); 
 	font-size:large; 
