@@ -7,25 +7,41 @@ height: 1536px;
 
 .button {
 	display:block;
-	padding:2px;
-	width: 190px;
-	height: 190px;
 	cursor:pointer;
 	border-radius: 13px;
 	margin: 8px;	
+	size:auto;
 
 }
 .button.button-return {
 	background:url('Links/button_return.svg');
 	background-size: auto 100%;
 	background-color: #B2B2B2;
-	box-shadow: 0px 5px rgba(210,210,210) ;
+	box-shadow: 0px 5px rgb(142,142,147) ;
+	width: 190px;
+	height: 190px;
 }
 
 .button.button-stop {
 	background:url('Links/button_stop.svg');
 	background-size: auto 100%;
 	background-color: #B2B2B2;
-	box-shadow: 0px 5px rgba(210,210,210) ;
+	box-shadow: 0px 5px rgb(142,142,147) ;
+	width: 190px;
+	height: 190px;
 }
 
+.button.button-success {
+	background-size: auto 100%;
+	background-color: #FF0000;
+	box-shadow: 0px 5px rgb(210,0,0) ;
+	width: 370px;
+	height: 105px;
+}
+.button.button-success p {
+	font-family: arial;
+	font-style: arial;
+	color:white;
+	text-align: center;
+	font-size: 60px;
+}
