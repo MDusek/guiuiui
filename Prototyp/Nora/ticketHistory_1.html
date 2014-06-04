@@ -9,12 +9,13 @@
 </head>
 
 <body>
-    <section class="topSideBar" class="ebene">
+    <section class="topSideBar" >
         <span>16. Mai. 2014</span>
         <span>|</span>
         <span>19:17</span>
         <img class="logo"src="Links/Sbb-logo.svg">
         </img>
+       
         <div class="button-container-right">
             <a class="button button-info" onclick="changeToRed(this)">
                 <span>i</span>
@@ -28,10 +29,12 @@
     </section>
 
     <section  class="register-container ">
+         <span class="infoBillet" > Mein Billet 
+        </span>
        
         <a id="register1" class="register animated active " onclick="clickedOnRegister(1)">
-            <span>Von Nach Via Datum</span>
-        </a>
+           <span>Von <br>Nach<br> Via<br> Datum
+        </a></span>
         <a id="register2" class="register animated  " onclick="clickedOnRegister(2)">
             <span>Einfach/Retour</span>
         </a>
@@ -49,44 +52,46 @@
     <section class="field">
         <div class="field field-main">
             <!-- Screen 1 -->
-            <div id="screen1" class="screen  active">
-                <a class="valueField valueField-from">
-                    <span>Zürich HB</span>
-                </a>
-                <a class="valueField valueField-to">
+            <div id="screen1" class="screen active">
+                <div class="valueField eins">
+                    <span>Zürich HBs</span>
+                </div>
+                <div class="valueField">
                     <span>Kreuzlingen</span>
-                </a>
-                <a class="valueField valueField-via">
+                </div>
+                <div class="valueField valueField-via">
                     <span>direkt</span>
-                </a>
-                <a class="valueField valueField-date">
+                </div>
+                <div class="valueField ">
                     <span>05.06.2014</span>
-                </a>
+                </div>
                 <a class="button button-success " onclick="screenForward()">
-                    <span>weiter</span>
+                   <span>weiter</span>
                 </a>
             </div>
             <!-- Screen 2 -->
             <div id="screen2" class="screen" >
                 <span>Einfach</span>
-                <a id="button" class="button button-oneWay"onclick="screenForward()"><span>2 Stunden</span></a>
+                <a id="button" class="button button-oneWay"onclick="screenForward()">2 Stunden</a>
 
                 <span>Retour</span>
-                <a id="button" class="button button-back"onclick="screenForward()"><span>24 Stunden</span>
+                <a id="button" class="button button-back"onclick="screenForward()">24 Stunden
                 </a>
 
             </div>
             <!--Screen 3 -->
             <div id="screen3" class="screen  ">
-
-                <a id="button" class="button button-1class" onclick="screenForward()"><span>1. Klasse</span></a>
-                <a id="button" class="button button-2class" onclick="screenForward()" ><span>2. Klasse</span></a>
+                
+                <a id="button" class="button button-1class" onclick="screenForward()"onclick="changeToRed(this)"  >1. Klasse</a>
+                <a id="button" class="button button-2class" onclick="screenForward()" onclick="changeToRed(this)" >2. Klasse</a>
             </div>
 
            <!-- Screen 4 -->
              <div id="screen4" class="screen ">
+                <span>mit Halbtaxt <br> / Kinder</span>
+                 <span>Erwachsen</span>
               <a class="button button-success" onclick="screenForward()">
-                    <span>weiter</span>
+                   <span> weiter</span>
                 </a></div>
                 <div id="screen5" class="screen ">
               </div>

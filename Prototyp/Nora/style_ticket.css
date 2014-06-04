@@ -12,15 +12,7 @@ span {
 	font-style: normal;
 	float: left;
 }
-.topSideBar span{
-	font-size: 15px;
-	font-color:white;
-}
 
-.logo {
-	float: right;
-	width: 150px;
-}
 
 .ebene{
 	background-color: transparent;
@@ -28,18 +20,40 @@ span {
 .button{
 	display:block;
 	cursor:pointer;
-	border-radius: 13px;
+	border-radius:5px;
 	-webkit-box-shadow: 0px 5px #D60000;	
 }
 
-.button span{
+.button{
+	font-family: arial;
+	font-style: normal;
 	color: white;
 	font-size: 25px;
 	float:left;
+	line-height: 100%;
+	text-align: left;
+}
+/* SIDEBAR UND TOP */
 
-
+.topSideBar span{
+	font-size: 15px;
+	color: white;
+	padding-right: 5px;	
+}
+.infoBillet {
+	float: left;
+	color:#FF0000;
+	padding-right: 5px;	
+	line-height: 15px;
+	padding-bottom:5px;
+	margin-left: 10px;
 }
 
+
+.logo {
+	float: right;
+	width: 170px;
+}
 .button-container-right {
 	position: absolute;
 	left: 939px;
@@ -74,6 +88,7 @@ span {
 	height: 85px;
 	margin-top: 10px;
 }
+
 .button.button-stop {
 	float: right;
 	background:url('Links/button_stop.svg');
@@ -83,10 +98,10 @@ span {
 	height: 85px;
 	margin-top: 10px;
 }
-
+/* REGISTER MIT ANIMATION*/
 .register-container{
 	position: absolute;
-	top: 70px;
+	top: 50px;
 	left: 0px;
 	height:1336px;
 	width: 270px;
@@ -104,39 +119,89 @@ span {
 	margin-top: 10px;
 	display:block;
 	cursor:pointer;
-	border-top-right-radius: 13px;	
-	border-bottom-right-radius: 13px;	
+	border-top-right-radius: 5px;	
+	border-bottom-right-radius: 5px;	
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+
 }
-#register1{
+.register span{
+	color:white;
+	font-size: 25px;
+	line-height: 100px;
+	float: left;
+	padding-left: 10px;
+
+}
+#register1 {
 	height: 220px;
 	margin-left: 0px;
-	margin-top: 0px
+	margin-top: 0px;
+	
 }
-
-
-.button.button-success {
-	position: absolute;
-	top:500px;
-	left: 400px;
-	background-color: #FF0000;
-	box-shadow: 0px 5px rgb(210,0,0) ;
-	width: 185px;
-	height: 51px;
-	opacity: 1;
-}
-
-.button.button-success p {
+#register1 span{
+	line-height: 50px;
 	font-family: arial;
-	color:white;
-	text-align: center;
-	font-size: 45px;
-	line-height: 51px;
+	color: white;
+	padding-top: 12px;
 }
+
+/*CONTENT FELD */
+.field.field-main div.screen{
+	display:none;
+	position: absolute;
+	top: 70px;
+	left:298px;
+	background-color: rgba(255,255,255,0.7);
+	width: 618px;
+	height: 550px;
+}
+
+.field.field-main div.screen.active {
+	display:block;
+}
+.field.field-main #screen5 {
+	height:660px;
+}
+.screen span{
+	font-size: 25px;
+	line-height: 25px;
+	margin-left: 150px;
+	margin-bottom:5px;
+	margin-top: 37px;
+}
+
+.screen.button span{
+	margin-left: 0px;
+}
+
+.valueField.eins {
+	margin-top: 67px;
+}
+.valueField {
+	display: block;
+	float: left;
+	width: 430px;
+	height:65px;
+	background-color: white;
+	border-style: solid;
+	border-color: #666666;
+	border-width: 1px;
+	margin-left:150px;
+	margin-top: 18px;
+	border-top-width: 2px;
+}
+.valueField span{
+	color: black;
+	margin-left: 30px;
+	line-height: 65px;
+	margin-top: 0px;
+}
+
+/*CONTENT FELD BUTTON*/
 
 .button.button-oneWay{
 	float: left;	
@@ -153,7 +218,6 @@ span {
 	width: 254px;
 	height: 100px;
 	margin-left:150px;
-	margin-top: 92px;
 }
 
 .button.button-1class{
@@ -164,6 +228,7 @@ span {
 	height: 100px;
 	margin-left:150px;
 }
+
 .button.button-2class{
 	float: left;
 	background-color: #566373;
@@ -171,65 +236,33 @@ span {
 	width: 254px;
 	height: 100px;
 	margin-left:150px;
-	margin-top: 92px;
 }
 
+.button.button-success {
+	position: absolute;
+	top:450px;
+	left: 400px;
+	background-color: #FF0000;
+	box-shadow: 0px 5px rgb(210,0,0) ;
+	width: 185px;
+	height: 51px;
 
-.register.animated.active
 
-{
-	background-color: #eee;
+}
+.button.button-success span{
+	margin-left: 10px;
+	line-height: 51px;
+	margin-top: 0px;
+}
+
+.register.animated.active{
+	background-color: rgba(255,255,255,0.7);
 	width:298px;
 	border-radius: 0;
 	box-shadow: none;
-	opacity: 0.7;
 }
-
-
 
 .register.animated.active span,
 .register.animated:hover span {
 	color:#000;
-
-}
-
-.field.field-main div.screen {
-	display:none;
-	position: absolute;
-	top: 70px;
-	left:298px;
-	background-color: white;
-	float: left;
-	padding-top: 67px;
-	opacity: 0.7;
-	width: 618px;
-	height: 547px;
-	}
-
-.field.field-main div.screen.active {
-	display:block;
-}
-.field.field-main span{
-	font-size: 25px;
-	line-height: 100px;
-	margin-left: 30px;
-
-}
-.valueField{
-	float: left;
-	width: 430px;
-	height:65px;
-	display: block;
-	background-color: white;
-	border-style: solid;
-	border-color: #666666;
-	margin-left:150px;
-	margin-top: 18px;
-	border-bottom-width: 1px;
-	border-right-width: 1px;
-	border-left-width: 1px
-}
-
-.valueField span{
-	color: black;
 }
