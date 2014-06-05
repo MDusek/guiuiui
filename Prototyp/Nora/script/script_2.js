@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	alert("fuuuuuuuuuckkkkkkk");
+	//alert("fuuuuuuuuuckkkkkkk");
 
 function screenForward (event) {
 
@@ -52,10 +52,9 @@ $('#button-2class' ).on( 'click', function( e ){
 	var inhalt = $( this).html();
 	$('#register3 span ').html(  inhalt  );
 });
-/* $('#success4').on( 'click',function( e )){
- 	$( this).html();
-	$('#register5 span ').html('180.00 CHF');
-});*/
+$('#success4').on( 'click',function( e ){
+	$('#register5 span ').html('180.00 CHF | 147.70 EUR');
+});
 
 
 function registerForward(event){
@@ -76,16 +75,40 @@ $('.register').on('click', registerForward);
 var counter = 0;
 
 function updated(event){
-if($('#plusErw').on('click,', counter+1)){
-	
-	$('#valueNumber2').text(counter);
-	counter>6 == false;
+	if ($('#plusErw').on('click,', counter+1)) {
+		
+		$('#valueNumber2').text(counter);
+		counter > 6 == false;
 
-}else if($('#minusErw').on('click,', counter-1)){	
-	$('#valueNumber2').text(counter);
-	counter<0 == false;
-	};
+	} else if($('#minusErw').on('click,', counter-1)) {	
+		
+		$('#valueNumber2').text(counter);
+		counter<0 == false;
+	}
 };
+
+
+$('#plusErw').on('click', function (event) {
+	var newVal = parseInt($('#minErwValue').text()) + 1;
+	newVal = Math.min(newVal, 6);
+	$('#minErwValue span').text(newVal);
+});
+$('#minusErw').on('click', function (event) {
+	var newVal = parseInt($('#minErwValue span').text()) - 1;
+	newVal = Math.max(newVal, 0);
+	$('#minErwValue span').text(newVal);
+});
+$('#plusKind').on('click', function (event) {
+	var newVal = parseInt($('#minKindValue').text()) + 1;
+	newVal = Math.min(newVal, 6);
+	$('#minKindValue span').text(newVal);
+});
+$('#minusKind').on('click', function (event) {
+	var newVal = parseInt($('#minKindValue').text()) - 1;
+	newVal = Math.max(newVal, 0);
+	$('#minKindValue span').text(newVal);
+});
+
 
 
 	
