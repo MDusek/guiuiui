@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf8">
     <link rel="stylesheet" type="text/css" href="style_ticket.css">
-    <script type="text/javascript" src="script/script.js   "></script>
+    <script type="text/javascript" src="script/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+   
     <title>ticketHistory</title>
 </head>
 
@@ -32,19 +34,19 @@
          <span class="infoBillet" > Mein Billet 
         </span>
        
-        <a id="register1" class="register animated active " onclick="clickedOnRegister(1)">
+        <a id="register1" class="register animated active " onclick="clickedOnRegister(1)" >
            <span>Von <br>Nach<br> Via<br> Datum
         </a></span>
-        <a id="register2" class="register animated  " onclick="clickedOnRegister(2)">
+        <a id="register2" class="register animated "onclick="clickedOnRegister(2)"  >
             <span>Einfach/Retour</span>
         </a>
-        <a id="register3" class="register  animated  " onclick="clickedOnRegister(3)">
+        <a id="register3" class="register  animated " onclick="clickedOnRegister(3)" >
             <span>Einfach/Retour</span>
         </a>
         <a id="register4" class="register  animated " onclick="clickedOnRegister(4)">
             <span>Klasse</span>
         </a>
-        <a id="register5" class="register animated  " onclick="clickedOnRegister(5)">
+        <a id="register5" class="register animated "onclick="clickedOnRegister(5)">
             <span>Preis</span>
         </a>
     </section>
@@ -53,16 +55,16 @@
         <div class="field field-main">
             <!-- Screen 1 -->
             <div id="screen1" class="screen active">
-                <div class="valueField eins">
+                <div class="valueField 1" >
                     <span>Zürich HBs</span>
                 </div>
-                <div class="valueField">
+                <div class="valueField 2">
                     <span>Kreuzlingen</span>
                 </div>
-                <div class="valueField valueField-via">
+                <div class="valueField 3">
                     <span>direkt</span>
                 </div>
-                <div class="valueField ">
+                <div class="valueField 4 ">
                     <span>05.06.2014</span>
                 </div>
                 <a class="button button-success " onclick="screenForward()">
@@ -72,24 +74,36 @@
             <!-- Screen 2 -->
             <div id="screen2" class="screen" >
                 <span>Einfach</span>
-                <a id="button" class="button button-oneWay"onclick="screenForward()">2 Stunden</a>
+                <a id="button-2class" class="button button-oneWay"onclick="screenForward()">2 Stunden</a>
 
                 <span>Retour</span>
-                <a id="button" class="button button-back"onclick="screenForward()">24 Stunden
+                <a id="button" class="button button-back" onclick="screenForward()">24 Stunden
                 </a>
 
             </div>
             <!--Screen 3 -->
             <div id="screen3" class="screen  ">
                 
-                <a id="button" class="button button-1class" onclick="screenForward()"onclick="changeToRed(this)"  >1. Klasse</a>
-                <a id="button" class="button button-2class" onclick="screenForward()" onclick="changeToRed(this)" >2. Klasse</a>
+                <a id="button-1class" class="button button-class" onclick="changeToRed(this);screenForward()"  >1. Klasse</a>
+                <a id="button-2class" class="button button-class" onclick="changeToRed(this);screenForward()" >2. Klasse</a>
             </div>
 
            <!-- Screen 4 -->
              <div id="screen4" class="screen ">
-                <span>mit Halbtaxt <br> / Kinder</span>
-                 <span>Erwachsen</span>
+                <span class="textInfo">mit Halbtaxt <br> / Kinder</span>
+            <a class="button plusMinus" >
+            </a>
+             <div class="valueField number ">
+                   
+             <a class="button plusMinus" >
+            </a>
+                 <span class="textInfo">Erwachsen</span>
+            <a class="button plusMinus" >
+            </a>
+             <div class="valueField number ">
+                   
+             <a class="button plusMinus" >
+            </a>
               <a class="button button-success" onclick="screenForward()">
                    <span> weiter</span>
                 </a></div>
