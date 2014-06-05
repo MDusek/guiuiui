@@ -59,6 +59,7 @@ span {
 
 }
 .button.button-info{
+	background:url('Links/button_info.svg');
 	float: right;
 	background-color: #566373;
 	box-shadow: 0px 5px rgb(142,142,147) ;
@@ -105,7 +106,7 @@ span {
 
 .register{
 	float: left;	
-	background-color: #566373;
+	background-color: #A6ADB6;
 	box-shadow: 0px 5px rgb(142,142,147) ;
 	width: 270px;
 	height: 100px;
@@ -131,17 +132,24 @@ span {
 	padding-left: 10px;
 
 }
-#register1 {
+#register1  {
+	padding-top: 5px;
 	height: 220px;
 	margin-left: 0px;
 	margin-top: 0px;
 	
 }
 #register1 span{
+	width: 289px;
 	line-height: 50px;
 	font-family: arial;
 	color: white;
-	padding-top: 12px;
+}
+
+#register2 img{
+	width: 100px;
+	float:right;
+	margin-right: 10px;	
 }
 
 /*CONTENT FELD */
@@ -194,7 +202,9 @@ span {
 }
 #value1{
 	margin-top: 67px;
+
 }
+
 .valueField span{
 	color: black;
 	margin-left: 30px;
@@ -210,33 +220,38 @@ span {
 	margin-top: 37px;
 }
 
-.button.button-way{
+#button-oneWay{
+	background-repeat: no-repeat;
 	float: left;	
-	background-color: #566373;
+	background-color:#566373;
 	box-shadow: 0px 5px rgb(142,142,147) ;
 	width: 254px;
 	height: 100px;
 	margin-left:150px;
 }
-
 #button-backWay{
-	background:url('Links/Retour.svg') ;
 	background-repeat: no-repeat;
+	float: left;	
+	background-color:#566373;
+	box-shadow: 0px 5px rgb(142,142,147) ;
+	width: 254px;
+	height: 100px;
+	margin-left:150px;
 }
-#button-oneWay{
-	background:url('Links/Hin.svg') ;
-	background-repeat: no-repeat;
+.button.button-way img{
+	float: right;
+	margin-right: 30px;
+	margin-top: 15px;
+	width: 100px;
 }
-
-.button.button-way span{
+.backWay-data{
 	line-height: 100px;
-	margin-left: 30px;
-	margin-top: 40px;
-
+	margin-left: 5px;
+	margin-top: 10px;
 }
 .button.button-class{
 	float: left;
-	background-color: #566373;
+	background-color:#566373;
 	box-shadow: 0px 5px rgb(142,142,147) ;
 	width: 254px;
 	height: 100px;
@@ -256,13 +271,12 @@ span {
 }
 
 .button.plusMinus{
-	background:url('Links/button_stop.svg');
-	background-color: #566373;
+	background-color:#566373;
 	box-shadow: 0px 5px rgb(142,142,147) ;
 	width: 85px;
 	height: 85px;
 }
-#valueNumber{
+.valueField.nr{
 	border-width: 1px;
 	width: 75px;
 	height: 75px;
@@ -273,12 +287,19 @@ span {
 #screen4-info{
 	float: left;
 	margin-top: 67px;
-	width: 80px;
+	width: 120px;
 	height: 660px;
 	padding-left: 30px;
 	line-height:30px;
 }
-
+#screen4-info img{
+	float: left;
+	width: 35px;
+}
+#iconHalb{
+	margin-bottom:100px;
+	margin-left: 10px;
+}
 #screen5 img{
 	width: 550px;
 	margin-left: 34px; 
@@ -310,6 +331,9 @@ span {
 	box-shadow: none;
 }
 
+.register.animated.used{
+	background-color: #566373;	
+}
 .register.animated.active span,
 .register.animated:hover span {
 	color:#000;

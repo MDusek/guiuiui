@@ -4,7 +4,7 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 85 85" enable-background="new 0 0 85 85" xml:space="preserve">
 <g>
-	<rect x="6.8" y="-7.4" fill="none" width="149.5" height="157.7"/>
-	<text transform="matrix(0.95 0 0 0.93 6.79 85.7145)" fill="#FFFFFF" font-family="'ArialMT'" font-size="130">+</text>
+	<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="16.7" y1="44.7" x2="68.3" y2="44.7"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="42.5" y1="70" x2="42.5" y2="19.3"/>
 </g>
 </svg>

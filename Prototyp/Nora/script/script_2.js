@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	alert("fuuuuuuuuuckkkkkkk");
 
 function screenForward (event) {
 
@@ -9,6 +10,7 @@ function screenForward (event) {
 
 	// Activate Register
 	$('.register').removeClass('active');
+	$('register').prevAll('.register').addClass('used')
 	$('[data-id=' + $screens.data('next-id') + ']').addClass('active');
 }
 
@@ -20,8 +22,16 @@ $( '#screen5' ).on('click',screenForward );
 
 
 $('.button.button-success').on( 'click', function( e ){
-	var inhalt = $('.valuefield').html();
-	$('#register1 span').html(  inhalt  );
+	var inhalt = [
+		$('#value1').html(),
+		$('#value2').html(),
+		$('#value3').html(),
+		$('#value4').html()
+	];
+	$('#register1-from').html(  inhalt[0]  );
+	$('#register2-to').html(  inhalt[1]  );
+	$('#register3-via').html(  inhalt[2]  );
+	$('#register4-date').html(  inhalt[3]  );
 });
 
 $('#button-oneWay' ).on( 'click', function( e ){
@@ -34,7 +44,7 @@ $('#button-backWay' ).on( 'click', function( e ){
 	$('#register2 span').html(  inhalt  );
 });
 
-$('.button.button-1class' ).on( 'click', function( e ){
+$('#button-1class' ).on( 'click', function( e ){
 	var inhalt = $( this).html();
 	$('#register3 span ').html(  inhalt  );
 });
@@ -42,25 +52,41 @@ $('#button-2class' ).on( 'click', function( e ){
 	var inhalt = $( this).html();
 	$('#register3 span ').html(  inhalt  );
 });
- $('#success4').on( 'click', function( e ){
-	var inhalt = ( '87.50 CHF').html();
-	$('#register5 span ').html(  inhalt  );
-});
+/* $('#success4').on( 'click',function( e )){
+ 	$( this).html();
+	$('#register5 span ').html('180.00 CHF');
+});*/
 
 
 function registerForward(event){
 
 	// Activate Register
 	var $register = $(this);
-	$('.register').removeClass('active');
+	$('.register').removeClass('active').removeClass('used');
+	$register.prevAll('.register').addClass('used')
 	$register.addClass('active');
 
 	// Activate Screen
 	$('.screen').removeClass('active');
 	$('#' + $register.data('id')).addClass('active');
-}
+};
 $('.register').on('click', registerForward);
 
 
+var counter = 0;
 
+function updated(event){
+if($('#plusErw').on('click,', counter+1)){
+	
+	$('#valueNumber2').text(counter);
+	counter>6 == false;
+
+}else if($('#minusErw').on('click,', counter-1)){	
+	$('#valueNumber2').text(counter);
+	counter<0 == false;
+	};
+};
+
+
+	
 });
