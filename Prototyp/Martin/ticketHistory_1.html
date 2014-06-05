@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="style_ticket.css">
+  <script type="text/javascript" src="script/script.js   "></script>
+    <title>ticketHistory</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="jQuery OnScreen Keyboard">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jsKeyboard.css" type="text/css" media="screen"/>
+
+    <link rel="stylesheet" href="../bsa_styles.css">
+</head>
+
+<body>
+    <!-- *** HAUPTNAVIGATION *** -->
+    <section class="topSideBar" class="ebene">
+        <span>16. Mai. 2014</span>
+        <span>|</span>
+        <span>19:17</span>
+        <img class="logo"src="Links/Sbb-logo.svg">
+        </img>
+
+        <!-- *** RECHTE SIDEBAR *** -->
+        <div class="button-container-right">
+            <!-- Info -->
+            <a class="button button-info" onclick="changeToRed(this)">
+                <span>i</span>
+            </a>
+            <!-- Stop -->
+            <a class="button button-stop" onclick="changeToRed(this)">
+            </a>
+            <!-- Zurück -->
+            <a class="button button-return" onclick="changeToRed(this)">
+            </a>
+
+        </div>
+    </section>
+
+    <section class="tastaturAlles">
+
+        <a class="Vorschlag"> Kreuzlingen </a>
+        <a class="Knopf_nachoben"></a>
+        <a class="Knopf_nachunten"></a>
+        <a class="Vorschlag"> Kreuzboden </a>
+        <a class="Vorschlag"> Kreuzstrasse </a>
+        <a class="Vorschlag"> Kreuzlingen Hafen </a>
+
+        <input type="text" class= "Eingabefeld" value="">
+
+        <div id="virtualKeyboard">ABC</div>
+
+    </section>
+
+
+</body>
+
+</html>
